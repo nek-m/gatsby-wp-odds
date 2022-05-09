@@ -20,6 +20,7 @@ To get your project started or to just try it out, you can **follow the [Gatsby 
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
+  kati kainoyrio
     .
     ├── node_modules
     ├── src
