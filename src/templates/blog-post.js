@@ -48,6 +48,11 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
         {!!post.content && (
           <section itemProp="articleBody">{parse(post.content)}</section>
         )}
+{/* apo katw */}
+        <p id="odds">
+          {post.oddsCustomFields.apodosi}
+
+        </p>
 
         <hr />
 
@@ -100,6 +105,13 @@ export const pageQuery = graphql`
       excerpt
       content
       title
+
+     
+      oddsCustomFields {
+        omada
+        apodosi
+      }
+
       date(formatString: "MMMM DD, YYYY")
       featuredImage {
         node {
